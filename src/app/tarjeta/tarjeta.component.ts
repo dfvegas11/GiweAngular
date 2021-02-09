@@ -7,13 +7,10 @@ import { Component,Input, OnInit } from '@angular/core';
 })
 export class TarjetaComponent implements OnInit {
 
-  @Input() nombre : any;
-  @Input() apellido : any;
-  @Input() edad : any;
-  @Input() hobby : any;
-  @Input() equipo : any;
-  @Input() universidad : any;
-  @Input() carrera : any;
+  @Input() titulo : any;
+  @Input() subtitulo: any;
+  @Input() imagen : any;
+  @Input() descripcion : any;
 
   constructor() { }
 

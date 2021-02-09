@@ -1,9 +1,16 @@
-<app-tarjeta [nombre]="nombre" 
-            [apellido]="apellido" 
-            [edad]="edad"
-            [hobby]="hobby"
-            [equipo]="equipo"
-            [universidad]="universidad"
-            [carrera]="carrera">
-        </app-tarjeta>
+<app-tarjeta [titulo]="tituloNombre" 
+            [subtitulo]="subtituloApellido" 
+            [imagen]="imagen1"
+            [descripcion]="descripcion1">
+</app-tarjeta>
+<app-tarjeta [titulo]="tituloHobby" 
+            [subtitulo]="subtituloHobby" 
+            [imagen]="imagen2"
+            [descripcion]="descripcion2">
+</app-tarjeta>
+<app-tarjeta [titulo]="tituloUni" 
+            [subtitulo]="subtituloUni" 
+            [imagen]="imagen3"
+            [descripcion]="descripcion3">
+</app-tarjeta>
 <router-outlet></router-outlet>

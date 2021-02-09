@@ -6,42 +6,20 @@
     <link rel="stylesheet" href="tarjeta.component.css">
 </head>
 <body>
-    <div class="navbar" style="width: 90%; margin: 0 auto; padding: 20px;">
         <mat-grid-list cols="3" rowHeight="500px" style="box-shadow: 5px 5px 5px black; background-color: #338DFF;">
             <mat-grid-tile [colspan]="3" [rowspan]="1">  
                 <mat-card class="example-card">
                     <mat-card-header>
-                      <mat-card-title>{{nombre}}</mat-card-title>
-                      <mat-card-subtitle>{{apellido}}</mat-card-subtitle>
+                      <mat-card-title>{{titulo}}</mat-card-title>
+                      <mat-card-subtitle>{{subtitulo}}</mat-card-subtitle>
                     </mat-card-header>
-                    <img mat-card-image src="../../assets/Me.jpg" width="50" height="350">
+                    <img mat-card-image src="{{imagen}}" width="50" height="350">
                     <mat-card-content>
-                      Tengo {{edad}} años, nací en Bogotá.
-                    </mat-card-content>
-                  </mat-card>
-                  <mat-card class="example-card" >
-                    <mat-card-header>
-                      <mat-card-title>Mi hobby</mat-card-title>
-                      <mat-card-subtitle>{{hobby}}</mat-card-subtitle>
-                    </mat-card-header>
-                    <img mat-card-image src="../../assets/Futbol.jpg" width="50" height="330">
-                    <mat-card-content>
-                      Junto a mi hermano y mi padre disfruto mucho jugar {{hobby}} los fines de semana en el equipo {{equipo}}.
-                    </mat-card-content>
-                  </mat-card>
-                  <mat-card class="example-card" >
-                    <mat-card-header>
-                      <mat-card-title>Mi Universidad</mat-card-title>
-                      <mat-card-subtitle>{{universidad}}</mat-card-subtitle>
-                    </mat-card-header>
-                    <img mat-card-image src="../../assets/UD.png" width="300" height="330">
-                    <mat-card-content>
-                      Entré a la {{universidad}} en el año 2018 a estudiar la carrera de {{carrera}}
+                      {{descripcion}}
                     </mat-card-content>
                   </mat-card>
             </mat-grid-tile>
           </mat-grid-list>
-        </div>
     </body>
 </html>
 
